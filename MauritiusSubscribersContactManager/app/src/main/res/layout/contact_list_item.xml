@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+    <TextView
+        android:id="@+id/contact_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_toLeftOf="@+id/contact_list_item_operator_three"
+        android:layout_toStartOf="@+id/contact_list_item_operator_three"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/primary_text_light" />
+
+    <ImageView
+        android:id="@+id/contact_list_item_operator_one"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contact_list_item_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/contact_item_empty" />
+
+    <ImageView
+        android:id="@+id/contact_list_item_operator_two"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contact_list_item_name"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/contact_list_item_operator_one"
+        android:layout_toStartOf="@+id/contact_list_item_operator_one"
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/contact_item_empty" />
+
+    <ImageView
+        android:id="@+id/contact_list_item_operator_three"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contact_list_item_name"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/contact_list_item_operator_two"
+        android:layout_toStartOf="@+id/contact_list_item_operator_two"
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/contact_item_empty" />
+
+</RelativeLayout>

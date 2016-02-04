@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_list_no_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <TextView
+        android:id="@+id/contact_list_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:clickable="false"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/no_contacts_to_show"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        />
+
+
+</RelativeLayout>

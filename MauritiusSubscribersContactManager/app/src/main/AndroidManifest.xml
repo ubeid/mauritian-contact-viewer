@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="adz.mauritius.subscribers.contact.viewer">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/long_app_name"
+        android:logo="@mipmap/ic_launcher"
+        android:description="@string/app_description"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MSContactViewerMainActivity"
+            android:label="@string/short_app_name"
+            android:windowSoftInputMode="stateHidden">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="adz.mauritius.subscribers.contact.viewer.ContactDetailsActivity" android:theme="@style/PopupActivityStyle"/>
+        <activity android:name="adz.mauritius.subscribers.contact.viewer.LegendActivity" android:theme="@style/PopupActivityStyle"/>
+        <activity android:name="adz.mauritius.subscribers.contact.viewer.AboutActivity" android:theme="@style/PopupActivityStyle"/>
+
+    </application>
+
+</manifest>

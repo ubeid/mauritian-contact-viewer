@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/all_contacts_fragment">
+
+    <EditText
+        android:id="@+id/all_contacts_search_box"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:hint="@string/edit_text_find_contacts"
+        android:maxLength="20"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:ellipsize="start"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:id="@+id/all_contacts_search_box_clear"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/ic_cancel_white_48dp" />
+
+    <include
+        android:id="@+id/all_contacts_list_view"
+        layout="@layout/contact_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/all_contacts_search_box" />
+</RelativeLayout>
